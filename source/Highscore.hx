@@ -20,8 +20,10 @@ class Highscore
 
 
 		#if !switch
+                #if newgrounds
 		NGio.postScore(score, song);
 		#end
+                #end
 
 		if(!FlxG.save.data.botplay)
 		{
@@ -56,8 +58,10 @@ class Highscore
 	{
 
 		#if !switch
+                #if newgrounds
 		NGio.postScore(score, "Week " + week);
 		#end
+                #end
 
 		if(!FlxG.save.data.botplay)
 		{
